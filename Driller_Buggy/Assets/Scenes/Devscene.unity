@@ -571,7 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871722862}
   - component: {fileID: 1871722863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,10 +605,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f63ad51d24ead4eb65f79eb171b6d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bG:
+    serializedVersion: 2
+    m_Bits: 512
+  system: {fileID: 0}
   player: {fileID: 0}
   speed: 0
   fingers: 0
   searchAreaBorder: {fileID: 0}
+  movePosition: {fileID: 0}
 --- !u!1 &1982590814
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982590815}
   - component: {fileID: 1982590816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +640,7 @@ Transform:
   m_GameObject: {fileID: 1982590814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 2114122998}
   m_Father: {fileID: 369540187}
@@ -664,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2011040960}
   - component: {fileID: 2011040961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114122998}
   - component: {fileID: 2114122999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Background Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}

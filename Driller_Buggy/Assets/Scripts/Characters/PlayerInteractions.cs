@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    public LayerMask bG;
     public SystemChecker system;
     public GameObject player;
     public int speed;
     public int fingers;
     public Collider2D searchAreaBorder;
+    public Transform movePosition;
+    Ray ray;
 
     void Start()
     {
@@ -21,7 +24,17 @@ public class PlayerInteractions : MonoBehaviour
     {
         if(system.Desktop == true && system.Handheld == false)
         {
+            if (Input.GetMouseButtonDown(2))
+            {
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
 
+                if(Physics.Raycast(ray, out hit, 100, bG))
+                {
+
+                    print("hip");
+                }
+            }
         }
         else if(system.Handheld == true && system.Desktop == false)
         {
